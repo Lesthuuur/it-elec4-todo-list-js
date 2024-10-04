@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Todo List</title>
+  </head>
+  <body>
+    <!-- Modal  -->
+    <div id="editModal" class="modal">
+      <div class="modal-content">
+        <h3>Edit Todo</h3>
+        <label for="modalTodoName">Name:</label>
+        <input type="text" id="modalTodoName" />
+
+        <label for="modalTodoDate">Date:</label>
+        <input type="date" id="modalTodoDate" />
+
+        <div class="modal-buttons">
+          <button id="saveEditBtn">Save</button>
+          <button id="closeModalBtn">Cancel</button>
+        </div>
+      </div>
+    </div>
+
+    <main>
+      <div class="title"><h1>YOUR PRODUCTIVITY BEGINS HERE</h1></div>
+
+      <div class="todo-container">
+        <div class="text">
+          <p>Add task here</p>
+        </div>
+
+        <div class="add-todo">
+          <input type="text" id="todoName" placeholder="Todo name" />
+          <input type="date" id="inputDate" />
+          <button id="addBtn">Add</button>
+          <button id="clearBtn">Clear</button>
+        </div>
+        <div class="line"></div>
+
+        <!-- THIS WILL BE THE CONTAINER FOR THE TASKS THAT WAS CREATED -->
+        <div class="todo-list">
+          <h2>Tasks</h2>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
